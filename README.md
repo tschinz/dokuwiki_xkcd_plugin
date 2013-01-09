@@ -47,7 +47,7 @@ The Comic is displayed with the following syntax:
 ## Want the old plugin?
 Download here the code from the old plugin created by Jeff Sacco It doesn't work on Rincewind and Angua.
 
-[Old xkcd Plugin](http://zawiki.dyndns.org/tschinz:programming:dw:xkcd:plugin-xkcd_old_jeff_sacco.tgz)
+[Old xkcd Plugin](http://zawiki.dyndns.org/lib/exe/fetch.php/tschinz:programming:dw:xkcd:plugin-xkcd_old_jeff_sacco.tgz)
 
 ## Thanks
 * Xkcd for amazing comics
