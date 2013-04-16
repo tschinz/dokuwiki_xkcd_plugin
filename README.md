@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <th align="left">Lastupdate</th>
-    <td>2012-10-22</td>
+    <td>2013-04-16</td>
   </tr>
   <tr>
     <th align="left">Tags</th>
@@ -38,6 +38,8 @@
   * Patch from kenneth
 * **2012-10-22**
   * Moved repo to github
+* **2013-04-16**
+  * xkcd changed xml format, adapted for new format
 
 ## Syntax
 The Comic is displayed with the following syntax:

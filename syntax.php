@@ -24,7 +24,7 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
         return array(
         'author'  => 'Zahno Silvan, Carlo Perassi',
         'email'   => 'zaswiki@gmail.com',
-        'date'    => '2012-09-25',
+        'date'    => '2013-04-16',
         'name'    => 'xkcd Plugin',
         'desc'    => 'It displays the xkcd treee times a week. Using RSS feed',
         'url'     => 'http://xkcd.com/rss.xml'
@@ -43,12 +43,13 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
 
         $description = (string) $xml->channel->item->description;
         $description = html_entity_decode($description);
-        $dom = new DOMDocument();
-        $dom->loadXML($description);
-        $imgSrc = $dom->childNodes->item(0)->attributes->getNamedItem('src' )->value;
-        $imgTitle = $dom->childNodes->item(0)->attributes->getNamedItem('title' )->value;
- 
-        $feed_contents = "<a href=\"$comicURL\"><img src=\"$imgSrc\" title=\"$imgTitle\" /></a>\n";
+        $feed_contents = $description;
+        // Not used anymore because of new xml format
+        //$dom = new DOMDocument();
+        //$dom->loadXML($description);
+        //$imgSrc = $dom->childNodes->item(0)->attributes->getNamedItem('src' )->value;
+        //$imgTitle = $dom->childNodes->item(0)->attributes->getNamedItem('title' )->value;
+        //$feed_contents = "<a href=\"$comicURL\"><img src=\"$imgSrc\" title=\"$imgTitle\" /></a>\n";
   
         return $feed_contents;
     }
