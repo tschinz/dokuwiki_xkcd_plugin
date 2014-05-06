@@ -4,4 +4,4 @@ email zaswiki@gmail.com
 date 2013-04-16
 name xkcd Plugin
 desc Dokuwiki Plugin to add the latest xkcd comic
-url http://zawiki.dyndns.org/doku.php/tschinz:dw_xkcd
+url http://zawiki.zapto.org/doku.php/tschinz:dw_xkcd
