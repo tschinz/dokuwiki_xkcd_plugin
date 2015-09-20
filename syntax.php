@@ -27,14 +27,14 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
         'date'    => '2013-04-16',
         'name'    => 'xkcd Plugin',
         'desc'    => 'It displays the xkcd treee times a week. Using RSS feed',
-        'url'     => 'http://xkcd.com/rss.xml'
+        'url'     => 'https://xkcd.com/rss.xml'
         );
     }
 
     private function _listhd() {
         require_once(DOKU_INC . 'inc/HTTPClient.php');
 
-        $url = 'http://xkcd.com/rss.xml';
+        $url = 'https://xkcd.com/rss.xml';
         $ch = new DokuHTTPClient();
         $piece = $ch->get($url);
         $xml = simplexml_load_string($piece);
