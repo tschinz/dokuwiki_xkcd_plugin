@@ -42,7 +42,7 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
         $comicURL = $xml->channel->item->link;
 
         $description = (string) $xml->channel->item->description;
-        $description = html_entity_decode($description);
+        $description = html_entity_decode($description, ENT_NOQUOTES);
         $feed_contents = $description;
         // Not used anymore because of new xml format
         //$dom = new DOMDocument();
