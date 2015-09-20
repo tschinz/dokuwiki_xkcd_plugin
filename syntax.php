@@ -26,7 +26,7 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
         'email'   => 'zaswiki@gmail.com',
         'date'    => '2013-04-16',
         'name'    => 'xkcd Plugin',
-        'desc'    => 'It displays the xkcd tree times a week. Using RSS feed',
+        'desc'    => 'It displays the xkcd three times a week. Using RSS feed',
         'url'     => 'https://xkcd.com/rss.xml'
         );
     }
