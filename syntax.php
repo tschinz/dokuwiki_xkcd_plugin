@@ -26,15 +26,15 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
         'email'   => 'zaswiki@gmail.com',
         'date'    => '2013-04-16',
         'name'    => 'xkcd Plugin',
-        'desc'    => 'It displays the xkcd treee times a week. Using RSS feed',
-        'url'     => 'http://xkcd.com/rss.xml'
+        'desc'    => 'It displays the xkcd three times a week. Using RSS feed',
+        'url'     => 'https://xkcd.com/rss.xml'
         );
     }
 
     private function _listhd() {
         require_once(DOKU_INC . 'inc/HTTPClient.php');
 
-        $url = 'http://xkcd.com/rss.xml';
+        $url = 'https://xkcd.com/rss.xml';
         $ch = new DokuHTTPClient();
         $piece = $ch->get($url);
         $xml = simplexml_load_string($piece);
@@ -42,7 +42,7 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
         $comicURL = $xml->channel->item->link;
 
         $description = (string) $xml->channel->item->description;
-        $description = html_entity_decode($description);
+        $description = html_entity_decode($description, ENT_NOQUOTES);
         $feed_contents = $description;
         // Not used anymore because of new xml format
         //$dom = new DOMDocument();
