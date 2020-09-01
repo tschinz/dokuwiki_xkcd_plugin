@@ -32,10 +32,8 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
     }
 
     private function _listhd() {
-        require_once(DOKU_INC . 'inc/HTTPClient.php');
-
         $url = 'https://xkcd.com/rss.xml';
-        $ch = new DokuHTTPClient();
+        $ch = new \dokuwiki\HTTP\DokuHTTPClient();
         $piece = $ch->get($url);
         $xml = simplexml_load_string($piece);
         
