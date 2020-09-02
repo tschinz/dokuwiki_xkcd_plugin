@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <th align="left">Lastupdate</th>
-    <td>2013-04-16</td>
+    <td>2020-09-02</td>
   </tr>
   <tr>
     <th align="left">Tags</th>
@@ -40,20 +40,20 @@
   * Moved repo to github
 * **2013-04-16**
   * xkcd changed xml format, adapted for new format
+* **2020-09-02**
+  * updated to new version of DokuHTTPClient
+  * Patch from R.Strittmatter
 
 ## Syntax
 The Comic is displayed with the following syntax:
 ```
 [xkcd]
 ```
-## Want the old plugin?
-Download here the code from the old plugin created by Jeff Sacco It doesn't work on Rincewind and Angua.
-
-[Old xkcd Plugin](http://zawiki.zapto.org/lib/exe/fetch.php/tschinz:programming:dw:xkcd:plugin-xkcd_old_jeff_sacco.tgz)
 
 ## Thanks
 * Xkcd for amazing comics
 * Kenneth for the patch
+* R.Strittmatter for the patch
 * Jeff Sacco for the old plugin
 
 ## Documentation
@@ -61,7 +61,6 @@ Download here the code from the old plugin created by Jeff Sacco It doesn't work
 All documentation for the XKCD Plugin is available online at:
 
   * [Dokuwiki Plugin Page](http://dokuwiki.org/plugin:xkcd)
-  * [ZaWiki Plugin Page](http://zawiki.zapto.org/doku.php/tschinz:dw_xkcd)
   * [Github Project Page](https://github.com/tschinz/dokuwiki_xkcd_plugin)
 
-2011 by Zahno Silvan <zaswiki@gmail.com>
+2020 by Zahno Silvan <zaswiki@gmail.com>

@@ -1,7 +1,7 @@
 base xkcd
 author Zahno Silvan
 email zaswiki@gmail.com
-date 2013-04-16
+date 2020-09-02
 name xkcd Plugin
 desc Dokuwiki Plugin to add the latest xkcd comic
-url http://zawiki.zapto.org/doku.php/tschinz:dw_xkcd
+url https://github.com/tschinz/dokuwiki_xkcd_plugin

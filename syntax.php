@@ -24,7 +24,7 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
         return array(
         'author'  => 'Zahno Silvan, Carlo Perassi',
         'email'   => 'zaswiki@gmail.com',
-        'date'    => '2013-04-16',
+        'date'    => '2020-09-02',
         'name'    => 'xkcd Plugin',
         'desc'    => 'It displays the xkcd three times a week. Using RSS feed',
         'url'     => 'https://xkcd.com/rss.xml'
@@ -36,7 +36,7 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
         $ch = new \dokuwiki\HTTP\DokuHTTPClient();
         $piece = $ch->get($url);
         $xml = simplexml_load_string($piece);
-        
+
         $comicURL = $xml->channel->item->link;
 
         $description = (string) $xml->channel->item->description;
@@ -48,7 +48,7 @@ class syntax_plugin_xkcd extends DokuWiki_Syntax_Plugin {
         //$imgSrc = $dom->childNodes->item(0)->attributes->getNamedItem('src' )->value;
         //$imgTitle = $dom->childNodes->item(0)->attributes->getNamedItem('title' )->value;
         //$feed_contents = "<a href=\"$comicURL\"><img src=\"$imgSrc\" title=\"$imgTitle\" /></a>\n";
-  
+
         return $feed_contents;
     }
 
